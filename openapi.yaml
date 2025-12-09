@@ -1,0 +1,110 @@
+openapi: 3.0.4
+info:
+  title: Fortune Cookie Generator
+  description: Fortune Cookie Generator creates authentic fortune cookie messages including wisdom, predictions, advice, humor, and motivational quotes.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/fortunecookie:
+    get:
+      summary: Generate Fortune Cookie Messages
+      description: Fortune Cookie Generator creates authentic fortune cookie messages including wisdom, predictions, advice, humor, and motivational quotes.
+      operationId: fortunecookie
+      parameters:
+      - name: count
+        default: '1'
+        in: query
+        schema:
+          type: number
+        required: false
+        description: Number of fortunes to generate (1-50)
+        example: '3'
+      - name: type
+        default: all
+        in: query
+        schema:
+          type: string
+        required: false
+        description: Type of fortune (all, wisdom, prediction, advice, humor, motivational)
+        example: wisdom
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  count: 3
+                  requested_type: wisdom
+                  fortunes:
+                  - fortune: When the winds of change blow, some build walls, others build windmills.
+                    type: wisdom
+                    lucky_numbers:
+                    - 16
+                    - 25
+                    - 44
+                    - 88
+                    - 97
+                    - 99
+                  - fortune: The best time to plant a tree was 20 years ago. The second best time is now.
+                    type: wisdom
+                    lucky_numbers:
+                    - 26
+                    - 31
+                    - 34
+                    - 48
+                    - 62
+                    - 68
+                  - fortune: He who knows others is wise; he who knows himself is enlightened.
+                    type: wisdom
+                    lucky_numbers:
+                    - 13
+                    - 25
+                    - 33
+                    - 59
+                    - 79
+                    - 83
+                  available_types:
+                  - all
+                  - wisdom
+                  - prediction
+                  - advice
+                  - humor
+                  - motivational
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
