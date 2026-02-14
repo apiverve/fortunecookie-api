@@ -14,15 +14,12 @@ const api = new fortunecookieAPI({
 });
 
 // Example query
-var query = {
-  count: 3,
-  type: "wisdom"
-};
+// This API does not require a Query
 
 // Make the API request using callback
 console.log('Making request to Fortune Cookie Generator API...\n');
 
-api.execute(query, function (error, data) {
+api.execute(function (error, data) {
     if (error) {
         console.error('Error occurred:');
         if (error.error) {
