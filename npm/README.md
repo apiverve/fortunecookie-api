@@ -116,54 +116,8 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "count": 3,
-    "requested_type": "wisdom",
-    "fortunes": [
-      {
-        "fortune": "When the winds of change blow, some build walls, others build windmills.",
-        "type": "wisdom",
-        "lucky_numbers": [
-          16,
-          25,
-          44,
-          88,
-          97,
-          99
-        ]
-      },
-      {
-        "fortune": "The best time to plant a tree was 20 years ago. The second best time is now.",
-        "type": "wisdom",
-        "lucky_numbers": [
-          26,
-          31,
-          34,
-          48,
-          62,
-          68
-        ]
-      },
-      {
-        "fortune": "He who knows others is wise; he who knows himself is enlightened.",
-        "type": "wisdom",
-        "lucky_numbers": [
-          13,
-          25,
-          33,
-          59,
-          79,
-          83
-        ]
-      }
-    ],
-    "available_types": [
-      "all",
-      "wisdom",
-      "prediction",
-      "advice",
-      "humor",
-      "motivational"
-    ]
+    "fortune": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "type": "wisdom"
   }
 }
 ```
