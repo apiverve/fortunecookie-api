@@ -51,7 +51,7 @@ Here's a simple example to get you started quickly:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.FortuneCookieGenerator;
 
 class Program
 {
@@ -114,7 +114,7 @@ The modern async/await pattern provides the best performance and code readabilit
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.FortuneCookieGenerator;
 
 public class Example
 {
@@ -144,7 +144,7 @@ If you need to use synchronous code, you can use the `Execute` method:
 
 ```csharp
 using System;
-using APIVerve;
+using APIVerve.API.FortuneCookieGenerator;
 
 public class Example
 {
@@ -179,7 +179,7 @@ The API client provides comprehensive error handling. Here are some examples:
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.FortuneCookieGenerator;
 
 public class Example
 {
@@ -229,7 +229,7 @@ public class Example
 ```csharp
 using System;
 using System.Threading.Tasks;
-using APIVerve;
+using APIVerve.API.FortuneCookieGenerator;
 
 public class Example
 {
@@ -349,54 +349,8 @@ using (var apiClient = new FortuneCookieGeneratorAPIClient("[YOUR_API_KEY]"))
   "status": "ok",
   "error": null,
   "data": {
-    "count": 3,
-    "requested_type": "wisdom",
-    "fortunes": [
-      {
-        "fortune": "When the winds of change blow, some build walls, others build windmills.",
-        "type": "wisdom",
-        "lucky_numbers": [
-          16,
-          25,
-          44,
-          88,
-          97,
-          99
-        ]
-      },
-      {
-        "fortune": "The best time to plant a tree was 20 years ago. The second best time is now.",
-        "type": "wisdom",
-        "lucky_numbers": [
-          26,
-          31,
-          34,
-          48,
-          62,
-          68
-        ]
-      },
-      {
-        "fortune": "He who knows others is wise; he who knows himself is enlightened.",
-        "type": "wisdom",
-        "lucky_numbers": [
-          13,
-          25,
-          33,
-          59,
-          79,
-          83
-        ]
-      }
-    ],
-    "available_types": [
-      "all",
-      "wisdom",
-      "prediction",
-      "advice",
-      "humor",
-      "motivational"
-    ]
+    "fortune": "The best time to plant a tree was 20 years ago. The second best time is now.",
+    "type": "wisdom"
   }
 }
 ```
