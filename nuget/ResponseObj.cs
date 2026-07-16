@@ -25,32 +25,29 @@ namespace APIVerve.API.FortuneCookieGenerator
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
-        [JsonProperty("count")]
-        public long Count { get; set; }
-
-        [JsonProperty("requested_type")]
-        public string RequestedType { get; set; }
-
-        [JsonProperty("fortunes")]
-        public Fortune[] Fortunes { get; set; }
-
-        [JsonProperty("available_types")]
-        public string[] AvailableTypes { get; set; }
-    }
-
-    public partial class Fortune
-    {
         [JsonProperty("fortune")]
-        public string FortuneFortune { get; set; }
+        public string Fortune { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }
+    }
 
-        [JsonProperty("lucky_numbers")]
-        public long[] LuckyNumbers { get; set; }
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
