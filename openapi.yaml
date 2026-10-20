@@ -18,8 +18,8 @@ servers:
 paths:
   /v1/fortunecookie:
     get:
-      summary: Generate Fortune Cookie Messages
-      description: Generate fortune cookie messages with lucky numbers
+      summary: Fortune Cookie Generator
+      description: Generate a random fortune cookie message
       operationId: fortunecookie
       parameters: []
       responses:

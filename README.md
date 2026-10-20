@@ -1,13 +1,13 @@
-# [Fortune Cookie Generator API](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Fortune Cookie Generator API](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
 Fortune Cookie Generator creates authentic fortune cookie messages including wisdom, predictions, advice, humor, and motivational quotes.
 
 The Fortune Cookie Generator API provides a simple, reliable way to integrate fortune cookie generator functionality into your applications. Built for developers who need production-ready fortune cookie generator capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -157,7 +157,7 @@ go get github.com/apiverve/fortunecookie-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Fortune Cookie Generator API](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Fortune Cookie Generator API](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/fortunecookie](https://docs.apiverve.com/ref/fortunecookie)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -217,7 +217,7 @@ A real response from the Fortune Cookie Generator API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Fortune Cookie Generator API](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Fortune Cookie Generator API](https://apiverve.com/marketplace/fortunecookie?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)
