@@ -1,7 +1,7 @@
 {
     "name": "apiverve/fortunecookie",
     "description": "Fortune Cookie Generator creates authentic fortune cookie messages including wisdom, predictions, advice, humor, and motivational quotes.",
-    "version": "1.2.0",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "fortunecookie",
-        "fortune cookie",
-        "fortune generator",
-        "wisdom",
-        "predictions",
-        "advice"
+        "fortune cookie api",
+        "fortune cookie generator",
+        "fortune cookie quotes api",
+        "free fortune cookie api",
+        "fortune cookie of the day api"
     ],
-    "homepage": "https://apiverve.com/marketplace/fortunecookie?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/fortunecookie?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/fortunecookie",
