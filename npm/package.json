@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/fortunecookie",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Fortune Cookie Generator creates authentic fortune cookie messages including wisdom, predictions, advice, humor, and motivational quotes.",
   "main": "index.js",
   "types": "index.d.ts",
