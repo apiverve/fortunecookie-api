@@ -6,62 +6,66 @@ class FortunecookieResponse {
   final dynamic error;
   final FortunecookieData? data;
 
+  /// Set only when the current plan locks one or more fields; null otherwise.
+  final PremiumInfo? premium;
+
   FortunecookieResponse({
     required this.status,
     this.error,
     this.data,
+    this.premium,
   });
 
   factory FortunecookieResponse.fromJson(Map<String, dynamic> json) => FortunecookieResponse(
     status: json['status'] as String? ?? '',
     error: json['error'],
     data: json['data'] != null ? FortunecookieData.fromJson(json['data']) : null,
+    premium: json['premium'] != null ? PremiumInfo.fromJson(json['premium']) : null,
   );
 
   Map<String, dynamic> toJson() => {
     'status': status,
     if (error != null) 'error': error,
     if (data != null) 'data': data,
+    if (premium != null) 'premium': premium!.toJson(),
+  };
+}
+
+/// Describes fields the current plan does not unlock. Locked fields arrive as null
+/// in [data], and [lockedFields] names them (nested ones use dot paths).
+class PremiumInfo {
+  final String? message;
+  final String? upgradeUrl;
+  final List<String>? lockedFields;
+
+  PremiumInfo({this.message, this.upgradeUrl, this.lockedFields});
+
+  factory PremiumInfo.fromJson(Map<String, dynamic> json) => PremiumInfo(
+    message: json['message'] as String?,
+    upgradeUrl: json['upgrade_url'] as String?,
+    lockedFields: (json['locked_fields'] as List?)?.map((e) => e.toString()).toList(),
+  );
+
+  Map<String, dynamic> toJson() => {
+    if (message != null) 'message': message,
+    if (upgradeUrl != null) 'upgrade_url': upgradeUrl,
+    if (lockedFields != null) 'locked_fields': lockedFields,
   };
 }
 
 /// Response data for the Fortune Cookie Generator API.
 
 class FortunecookieData {
-  int? count;
-  String? requestedType;
-  List<FortunecookieDataFortunesItem>? fortunes;
-  List<String>? availableTypes;
+  String? fortune;
+  String? type;
 
   FortunecookieData({
-    this.count,
-    this.requestedType,
-    this.fortunes,
-    this.availableTypes,
+    this.fortune,
+    this.type,
   });
 
   factory FortunecookieData.fromJson(Map<String, dynamic> json) => FortunecookieData(
-      count: json['count'],
-      requestedType: json['requested_type'],
-      fortunes: (json['fortunes'] as List?)?.map((e) => FortunecookieDataFortunesItem.fromJson(e)).toList(),
-      availableTypes: (json['available_types'] as List?)?.cast<String>(),
-    );
-}
-
-class FortunecookieDataFortunesItem {
-  String? fortune;
-  String? type;
-  List<int>? luckyNumbers;
-
-  FortunecookieDataFortunesItem({
-    this.fortune,
-    this.type,
-    this.luckyNumbers,
-  });
-
-  factory FortunecookieDataFortunesItem.fromJson(Map<String, dynamic> json) => FortunecookieDataFortunesItem(
       fortune: json['fortune'],
       type: json['type'],
-      luckyNumbers: (json['lucky_numbers'] as List?)?.cast<int>(),
     );
 }

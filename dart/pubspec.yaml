@@ -1,7 +1,7 @@
 name: apiverve_fortunecookie
-description: Fortune Cookie Generator creates authentic fortune cookie messages including wisdom, predictions, advice, humor, and motivational quotes.
-version: 1.1.14
-homepage: https://apiverve.com/marketplace/fortunecookie?utm_source=dart&utm_medium=homepage
+description: "Fortune Cookie Generator creates authentic fortune cookie messages including wisdom, predictions, advice, humor, and motivational quotes."
+version: 1.2.4
+homepage: https://apiverve.com/marketplace/fortunecookie?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/fortunecookie-api/tree/main/dart
 
 environment:
